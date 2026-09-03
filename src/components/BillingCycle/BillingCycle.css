@@ -1,0 +1,111 @@
+.billing-cycle-section {
+  margin: 1rem;
+}
+
+.billing-cycle-title {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+}
+
+.billing-cycle-options-row {
+  margin: 1rem 0;
+}
+
+.billing-cycle-options-row > [class*='col'] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.billing-cycle-options-row > [class*='col'] + [class*='col'] {
+  margin-top: 1rem;
+}
+
+.billing-cycle-card {
+  border: 1px solid #333;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.billing-cycle-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.billing-cycle-card-title {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.billing-cycle-card-information {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.billing-cycle-card-price {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.billing-cycle-card-radio {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.billing-cycle-card-body {
+  margin: 1rem 0 0;
+}
+
+.billing-cycle-card-description {
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.billing-cycle-card.selected {
+  border: 2px solid #4f46e5;
+  background-color: #f5f5ff;
+}
+
+.billing-cycle-card.selected .billing-cycle-card-title {
+  color: #4f46e5;
+}
+
+.billing-cycle-card.selected .billing-cycle-card-description {
+  color: #777;
+}
+
+@media (max-width: 767px) {
+  .billing-cycle-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .billing-cycle-section {
+    margin: 2rem;
+  }
+
+  .billing-cycle-options-row > [class*='col'] + [class*='col'] {
+    margin-top: 0;
+    padding-left: 1rem;
+  }
+}
