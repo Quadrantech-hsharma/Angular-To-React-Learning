@@ -1,18 +1,17 @@
 import './App.css'
-import { BillingCycleComponent } from './assignments/01-billing-cycle/components/BillingCycle/BillingCycle'
-import { PetManagement } from './assignments/02-pet-crud/components/PetManagement'
+import { BillingCycleComponent } from './features/billing-cycle/components/BillingCycle/BillingCycle'
+import { PetManagement } from './features/pet-management/components/PetManagement'
 
 function App() {
-
   return (
     <>
-    <BillingCycleComponent
-      monthlyPrice={10}
-      annualPrice={100}
-      monthlyFee={5}
-      savingsAmount={20}
-    />
-    <PetManagement />
+      <BillingCycleComponent
+        monthlyPrice={10}
+        annualPrice={100}
+        monthlyFee={5}
+        savingsAmount={20}
+      />
+      <PetManagement />
     </>
   )
 }
